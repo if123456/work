@@ -1,0 +1,53 @@
+1. 请说出异常的继承体系
+所有的异常类是从 java.lang.Exception 类继承的子类。
+Exception 类是 Throwable 类的子类。除了Exception类外，Throwable还有一个子类Error 。
+
+
+2. 请说出你对错误(Error)的理解
+严重错误Error，无法通过处理的错误
+
+3. 请说出你对编译异常(Expection的理解)
+异常产生后程序员可以通过代码的方式纠正，使程序继续运行，是必须要处理的。
+
+4. 请说出你对运行时异常(RuntimeException)的理解
+在运行时期,检查异常.在编译时期,运行异常不会编译器检测(不报错)。
+
+5.请说出虚拟机处理异常的方式
+
+
+6.请说出四种运行时异常
+ClassCastException 
+IndexOutOfBoundsException
+NullPointerException 
+IllegalArgumentException  
+
+7.请说出throw的使用位置，作用是什么?
+throw用在方法内，用来抛出一个异常对象，将这个异常对象传递到调用者处，并结束当前方法的执行。
+throw new 异常类名(参数);
+
+8. 请说出 throws的使用位置，作用是什么?
+关键字throws运用于方法声明之上,用于表示当前方法不处理异常,而是提醒该方法的调用者来处理异常(抛出异常).
+修饰符 返回值类型 方法名(参数) throws 异常类名1,异常类名2…{ }
+
+9. 异常处理方式有几种分别是什么
+try...catch语句
+finally语句
+throw语句
+throws语句
+
+10. 详细阐述每种方式对异常是如何处理的
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
