@@ -9,14 +9,14 @@ public class Test2_1 {
         FileOutputStream fos=new FileOutputStream("D:\\a\\stu.txt");
         Scanner input=new Scanner(System.in);
         String s="\\d-([\\u4e00-\\u9fa5]{2,3}|[a-z]{3,10})";
-        System.out.println("è¾“å…¥å­¦ç”Ÿå­¦å·å§“åï¼ˆå­¦å·-å§“åï¼‰");
+        System.out.println("ÊäÈëÑ§ÉúÑ§ºÅĞÕÃû£¨Ñ§ºÅ-ĞÕÃû£©");
         while(true){
             String str=input.nextLine();
             if ("end".equals(str)){
                 break;
             }
             else if(!str.matches(s)){
-                System.out.println("è¾“å…¥æ ¼å¼æœ‰è¯¯");
+                System.out.println("ÊäÈë¸ñÊ½ÓĞÎó");
             }
             else {
                 fos.write(str.getBytes());

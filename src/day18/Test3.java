@@ -1,6 +1,9 @@
 package day18;
 
 import java.io.*;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class Test3 {
@@ -11,24 +14,27 @@ public class Test3 {
         File file=new File(str);
         File file2=new File("D:\\b");
         copyJava(file,file2);
-        System.out.println("å¤åˆ¶å®Œæˆ");
+        System.out.println("¸´ÖÆÍê³É");
         File[] files=file2.listFiles();
         for (File f:files){
             if(f.getName().endsWith("java")){
                 count++;
             }
         }
-        System.out.println("å¤åˆ¶javaæ–‡ä»¶ "+count+"ä¸ª");
+        System.out.println("¸´ÖÆjavaÎÄ¼ş "+count+"¸ö");
     }
 
 
     public static void copyJava(File file,File desfile) throws IOException {
         File[] files=file.listFiles();
+        Date date=new Date();
+        DateFormat df=new SimpleDateFormat("yyyyMMddHHmmssSSS");
+        String s=df.format(date);
         for (File f:files){
             if(f.isFile()){
                 if(f.getName().endsWith("java")){
                     FileInputStream fis=new FileInputStream(f.getAbsoluteFile());
-                    FileOutputStream fos=new FileOutputStream(desfile+"\\"+f.getName());
+                    FileOutputStream fos=new FileOutputStream(desfile+"\\"+s+f.getName());
                     int len;
                     byte[]b=new byte[1024];
                     while ((len=fis.read(b))!=-1){

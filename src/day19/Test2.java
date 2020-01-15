@@ -9,6 +9,7 @@ public class Test2 {
         BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("D:\\a\\b.txt"));
         byte[] b = "I love java".getBytes();
         bos.write(b);
+        bos.flush();
         bos.close();
 
     }
