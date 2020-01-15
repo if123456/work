@@ -8,9 +8,9 @@ import java.util.ArrayList;
 
 public class Test11 {
     public static void main(String[] args) throws Exception {
-        Student s1=new Student("ÕÅÈı",20,"ÄĞ");
-        Student s2=new Student("Ğ¡ºì",20,"Å®");
-        Student s3=new Student("ÀîËÄ",20,"ÄĞ");
+        Student s1=new Student("å¼ ä¸‰",20,"ç”·");
+        Student s2=new Student("å°çº¢",20,"å¥³");
+        Student s3=new Student("æå››",20,"ç”·");
 
         ArrayList<Student> stu=new ArrayList<>();
         stu.add(s1);
