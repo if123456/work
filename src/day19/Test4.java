@@ -15,7 +15,7 @@ public class Test4 {
 //            bos.write("\r\n".getBytes());
 //        }
 //        bos.close();
-//        System.out.println("ÊäÈë±»Ğ£ÑéµÄÑéÖ¤Âë");
+//        System.out.println("è¾“å…¥è¢«æ ¡éªŒçš„éªŒè¯ç ");
 //        String s = input.nextLine();
 //        int len;
 //        byte[] b = new byte[1024];
@@ -26,9 +26,9 @@ public class Test4 {
 //                list.add(s1[i]);
 //            }
 //            if(list.contains(s)){
-//                System.out.println("Ğ£Ñé³É¹¦");
+//                System.out.println("æ ¡éªŒæˆåŠŸ");
 //            }else {
-//                System.out.println("Ğ£ÑéÊ§°Ü");
+//                System.out.println("æ ¡éªŒå¤±è´¥");
 //            }
 //        }
 //        bis.close();
@@ -41,7 +41,7 @@ public class Test4 {
             bw.newLine();
         }
         bw.close();
-        System.out.println("ÊäÈë±»Ğ£ÑéµÄÑéÖ¤Âë");
+        System.out.println("è¾“å…¥è¢«æ ¡éªŒçš„éªŒè¯ç ");
         String s=input.nextLine();
         String line=null;
         ArrayList<String> list = new ArrayList<>();
@@ -49,9 +49,9 @@ public class Test4 {
             list.add(line);
         }
         if(list.contains(s)){
-            System.out.println("Ğ£Ñé³É¹¦");
+            System.out.println("æ ¡éªŒæˆåŠŸ");
         }else {
-            System.out.println("Ğ£ÑéÊ§°Ü");
+            System.out.println("æ ¡éªŒå¤±è´¥");
         }
         br.close();
     }
