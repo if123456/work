@@ -14,14 +14,14 @@ public class Test3 {
         File file=new File(str);
         File file2=new File("D:\\b");
         copyJava(file,file2);
-        System.out.println("¸´ÖÆÍê³É");
+        System.out.println("å¤åˆ¶å®Œæˆ");
         File[] files=file2.listFiles();
         for (File f:files){
             if(f.getName().endsWith("java")){
                 count++;
             }
         }
-        System.out.println("¸´ÖÆjavaÎÄ¼ş "+count+"¸ö");
+        System.out.println("å¤åˆ¶javaæ–‡ä»¶ "+count+"ä¸ª");
     }
 
 

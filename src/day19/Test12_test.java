@@ -11,11 +11,10 @@ public class Test12_test {
         Path p2=Paths.get("D:\\a\\shi2.txt");
 
         Files.copy(p, p2);
-        InputStreamReader isr=new InputStreamReader(new FileInputStream(p2.toString()));
+        InputStreamReader isr=new InputStreamReader(new FileInputStream(p2.toString()),"GBK");
         int len;
         while((len=isr.read())!=-1){
             System.out.print((char) len);
         }
-
     }
 }

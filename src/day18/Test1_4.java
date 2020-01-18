@@ -10,7 +10,7 @@ public class Test1_4 {
 
         FileInputStream fis= null;
         try {
-            fis = new FileInputStream("D:\\a.txt");
+            fis = new FileInputStream("D:\\a\\a.txt");
         } catch (Exception e) {
             e.printStackTrace();
         }
